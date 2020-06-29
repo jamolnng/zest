@@ -1,7 +1,4 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+pub use crate::pkzip::ZipArchive;
+
+pub mod crc32;
+pub mod pkzip;
